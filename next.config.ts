@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Cloudflare ke liye clean config
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
   turbopack: {},
 };
 
